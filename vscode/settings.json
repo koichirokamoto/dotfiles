@@ -1,0 +1,92 @@
+{
+  // Common
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "explorer.confirmDragAndDrop": false,
+  "extensions.ignoreRecommendations": true,
+  "window.zoomLevel": 0,
+  "files.insertFinalNewline": true,
+
+  // Terminal
+  "terminal.external.osxExec": "iTerm.app",
+
+  // Go
+  "go.gopath": "/Users/koichirokamoto/go",
+  "go.goroot": "/usr/local/opt/go/libexec",
+  "go.gocodeAutoBuild": true,
+  "go.lintOnSave": "package",
+  "go.vetOnSave": "package",
+  "go.buildOnSave": "package",
+  "go.formatTool": "goimports",
+  "go.autocompleteUnimportedPackages": true,
+
+  // Python
+  "python.pythonPath": "${env.CONDA_PREFIX}/bin/python",
+  "python.jediEnabled": false,
+  "python.linting.pylintPath": "${env.CONDA_PREFIX}/bin/pylint",
+  "python.formatting.provider": "yapf",
+  "python.formatting.yapfPath": "${env.CONDA_PREFIX}/bin/yapf",
+  "python.formatting.yapfArgs": [
+    "--style",
+    "{based_on_style: google, indent_width: 2}"
+  ],
+
+  // C family
+  "C_Cpp.clang_format_fallbackStyle": "Google",
+
+  // Bash
+  "bashBeautify.tabSize": 2,
+
+  // Git
+  "gitlens.keymap": "chorded",
+  "gitlens.historyExplorer.enabled": true,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": true,
+    "suppressShowKeyBindingsNotice": true,
+    "suppressUpdateNotice": true,
+    "suppressWelcomeNotice": true
+  },
+  "githubPullRequests.hosts": [
+    {
+      "host": "https://github.com",
+      "username": "oauth",
+      "token": "system"
+    }
+  ],
+
+  // Magic Leap
+  "lumin_sdk": "/Users/koichirokamoto/MagicLeap/mlsdk/v0.16.0",
+  "lumin_host_toolchain": "clang-5.0_x64",
+  "lumin_device_toolchain": "clang-3.8_aarch64",
+
+  // Icons
+  "vsicons.dontShowNewVersionMessage": true,
+  "workbench.iconTheme": "vscode-icons",
+
+  // Auto close tag.
+  "auto-close-tag.activationOnLanguage": [
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "jinja",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "liquid",
+    "erb",
+    "lang-cfml",
+    "cfml",
+    "HTML (Eex)"
+  ]
+}

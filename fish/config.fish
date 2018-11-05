@@ -1,5 +1,6 @@
 set -gx GOPATH $HOME/go
 set PATH $PATH $HOME/google-cloud-sdk/bin $GOPATH/bin $HOME/miniconda3/bin $HOME/bin
+set PATH $PATH $HOME/protoc/bin
 set PATH $PATH /Library/Developer/Toolchains/swift-latest/usr/bin
 
 set -gx CLICOLOR 1

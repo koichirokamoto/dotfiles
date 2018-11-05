@@ -29,11 +29,19 @@ function rust() {
   fi
 }
 
+function protobuf() {
+  if ! type "protoc" > /dev/null; then
+    wget https://github.com/protocolbuffers/protobuf/releases/download/v3.6.1/protoc-3.6.1-osx-x86_64.zip -O ~/protoc.zip
+    unzip ~/protoc.zip -d ~/protoc && rm ~/protoc.zip
+  fi
+}
+
 function setup() {
   homebrew
   miniconda
   gcloud
   rust
+  protobuf
 }
 
 setup
